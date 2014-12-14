@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import <FBSnapshotTestCase/FBSnapshotTestCase.h>
+#import "UCZProgressView.h"
 
-@interface UCZProgressViewTests : XCTestCase
+@interface UCZProgressViewTests : FBSnapshotTestCase
 
 @end
 
@@ -17,24 +19,194 @@
 
 - (void)setUp {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+//- (void)testIndeterminate {
+//    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+//    progressView.indeterminate = YES;
+//    
+//    FBSnapshotVerifyView(progressView, nil);
+//}
+
+- (void)testProgress01 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.01;
+    
+    FBSnapshotVerifyView(progressView, nil);
 }
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+- (void)testProgress02 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.02;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testProgress05 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.05;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testProgress10 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.1;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testProgress20 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.2;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testProgress30 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.3;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testProgress50 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.5;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testProgress70 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testProgress90 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.9;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testProgress100 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 1.0;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testShowsText {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.showsText = YES;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testLineWidth {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.lineWidth = 6.0;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testRadius {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.radius = 40.0;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testTintColor {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.tintColor = [UIColor blueColor];
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testTextLabel {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.showsText = YES;
+    progressView.textLabel.font = [UIFont fontWithName:@"Copperplate-Bold" size:18.0];
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testTextColor {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.showsText = YES;
+    progressView.textColor = [UIColor redColor];
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testTextSize {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.showsText = YES;
+    progressView.textSize = 18.0;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testBlurEffectStyleExtraLight {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight];
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testBlurEffectStyleLight {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testBlurEffectStyleDark {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleDark];
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testCustomStyle1 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.showsText = YES;
+    progressView.textSize = 20.0;
+    progressView.lineWidth = 6.0;
+    progressView.radius = 40.0;
+    
+    FBSnapshotVerifyView(progressView, nil);
+}
+
+- (void)testCustomStyle2 {
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.progress = 0.7;
+    progressView.showsText = YES;
+    progressView.textSize = 20.0;
+    progressView.lineWidth = 6.0;
+    progressView.radius = 40.0;
+    progressView.tintColor = [UIColor blueColor];
+    progressView.textColor = [UIColor redColor];
+    
+    FBSnapshotVerifyView(progressView, nil);
 }
 
 @end
