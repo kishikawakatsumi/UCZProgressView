@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		143CE9CF1A3CB4B000761A4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 143CE9CE1A3CB4B000761A4F /* main.m */; };
+		143CE9D21A3CB4B000761A4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 143CE9D11A3CB4B000761A4F /* AppDelegate.m */; };
+		143CE9D51A3CB4B000761A4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 143CE9D41A3CB4B000761A4F /* ViewController.m */; };
+		143CE9D81A3CB4B000761A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 143CE9D61A3CB4B000761A4F /* Main.storyboard */; };
+		143CE9DA1A3CB4B000761A4F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 143CE9D91A3CB4B000761A4F /* Images.xcassets */; };
+		143CE9DD1A3CB4B000761A4F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 143CE9DB1A3CB4B000761A4F /* LaunchScreen.xib */; };
+		143CE9E91A3CB4B000761A4F /* UCZProgressViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 143CE9E81A3CB4B000761A4F /* UCZProgressViewTests.m */; };
+		143CE9F51A3CB5DC00761A4F /* UCZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 143CE9F41A3CB5DC00761A4F /* UCZProgressView.m */; };
+		149C91AD1A3CD74600691A0E /* ThumbnailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 149C91AC1A3CD74600691A0E /* ThumbnailCell.m */; };
+		149C91B01A3CD83000691A0E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149C91AF1A3CD83000691A0E /* DetailViewController.m */; };
+		149C91B31A3CE5C300691A0E /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 149C91B21A3CE5C300691A0E /* SettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		143CE9E31A3CB4B000761A4F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 143CE9C11A3CB4B000761A4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 143CE9C81A3CB4B000761A4F;
+			remoteInfo = UCZProgressView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		143CE9C91A3CB4B000761A4F /* UCZProgressView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UCZProgressView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		143CE9CD1A3CB4B000761A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143CE9CE1A3CB4B000761A4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		143CE9D01A3CB4B000761A4F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		143CE9D11A3CB4B000761A4F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		143CE9D31A3CB4B000761A4F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		143CE9D41A3CB4B000761A4F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		143CE9D71A3CB4B000761A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		143CE9D91A3CB4B000761A4F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		143CE9DC1A3CB4B000761A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		143CE9E21A3CB4B000761A4F /* UCZProgressViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UCZProgressViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		143CE9E71A3CB4B000761A4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		143CE9E81A3CB4B000761A4F /* UCZProgressViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UCZProgressViewTests.m; sourceTree = "<group>"; };
+		143CE9F31A3CB5DC00761A4F /* UCZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCZProgressView.h; sourceTree = "<group>"; };
+		143CE9F41A3CB5DC00761A4F /* UCZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCZProgressView.m; sourceTree = "<group>"; };
+		149C91AB1A3CD74600691A0E /* ThumbnailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThumbnailCell.h; sourceTree = "<group>"; };
+		149C91AC1A3CD74600691A0E /* ThumbnailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThumbnailCell.m; sourceTree = "<group>"; };
+		149C91AE1A3CD83000691A0E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		149C91AF1A3CD83000691A0E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		149C91B11A3CE5C300691A0E /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		149C91B21A3CE5C300691A0E /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		143CE9C61A3CB4B000761A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143CE9DF1A3CB4B000761A4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		143CE9C01A3CB4B000761A4F = {
+			isa = PBXGroup;
+			children = (
+				143CE9CB1A3CB4B000761A4F /* UCZProgressView */,
+				143CE9E51A3CB4B000761A4F /* UCZProgressViewTests */,
+				143CE9F21A3CB5DC00761A4F /* Lib */,
+				143CE9CA1A3CB4B000761A4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		143CE9CA1A3CB4B000761A4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				143CE9C91A3CB4B000761A4F /* UCZProgressView.app */,
+				143CE9E21A3CB4B000761A4F /* UCZProgressViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		143CE9CB1A3CB4B000761A4F /* UCZProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				143CE9D01A3CB4B000761A4F /* AppDelegate.h */,
+				143CE9D11A3CB4B000761A4F /* AppDelegate.m */,
+				143CE9D31A3CB4B000761A4F /* ViewController.h */,
+				143CE9D41A3CB4B000761A4F /* ViewController.m */,
+				149C91AB1A3CD74600691A0E /* ThumbnailCell.h */,
+				149C91AC1A3CD74600691A0E /* ThumbnailCell.m */,
+				149C91AE1A3CD83000691A0E /* DetailViewController.h */,
+				149C91AF1A3CD83000691A0E /* DetailViewController.m */,
+				149C91B11A3CE5C300691A0E /* SettingsViewController.h */,
+				149C91B21A3CE5C300691A0E /* SettingsViewController.m */,
+				143CE9D61A3CB4B000761A4F /* Main.storyboard */,
+				143CE9DB1A3CB4B000761A4F /* LaunchScreen.xib */,
+				143CE9D91A3CB4B000761A4F /* Images.xcassets */,
+				143CE9CC1A3CB4B000761A4F /* Supporting Files */,
+			);
+			path = UCZProgressView;
+			sourceTree = "<group>";
+		};
+		143CE9CC1A3CB4B000761A4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				143CE9CD1A3CB4B000761A4F /* Info.plist */,
+				143CE9CE1A3CB4B000761A4F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		143CE9E51A3CB4B000761A4F /* UCZProgressViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				143CE9E81A3CB4B000761A4F /* UCZProgressViewTests.m */,
+				143CE9E61A3CB4B000761A4F /* Supporting Files */,
+			);
+			path = UCZProgressViewTests;
+			sourceTree = "<group>";
+		};
+		143CE9E61A3CB4B000761A4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				143CE9E71A3CB4B000761A4F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		143CE9F21A3CB5DC00761A4F /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				143CE9F31A3CB5DC00761A4F /* UCZProgressView.h */,
+				143CE9F41A3CB5DC00761A4F /* UCZProgressView.m */,
+			);
+			name = Lib;
+			path = ../Lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		143CE9C81A3CB4B000761A4F /* UCZProgressView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143CE9EC1A3CB4B000761A4F /* Build configuration list for PBXNativeTarget "UCZProgressView" */;
+			buildPhases = (
+				143CE9C51A3CB4B000761A4F /* Sources */,
+				143CE9C61A3CB4B000761A4F /* Frameworks */,
+				143CE9C71A3CB4B000761A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UCZProgressView;
+			productName = UCZProgressView;
+			productReference = 143CE9C91A3CB4B000761A4F /* UCZProgressView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		143CE9E11A3CB4B000761A4F /* UCZProgressViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 143CE9EF1A3CB4B000761A4F /* Build configuration list for PBXNativeTarget "UCZProgressViewTests" */;
+			buildPhases = (
+				143CE9DE1A3CB4B000761A4F /* Sources */,
+				143CE9DF1A3CB4B000761A4F /* Frameworks */,
+				143CE9E01A3CB4B000761A4F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				143CE9E41A3CB4B000761A4F /* PBXTargetDependency */,
+			);
+			name = UCZProgressViewTests;
+			productName = UCZProgressViewTests;
+			productReference = 143CE9E21A3CB4B000761A4F /* UCZProgressViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		143CE9C11A3CB4B000761A4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "kishikawa katsumi";
+				TargetAttributes = {
+					143CE9C81A3CB4B000761A4F = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					143CE9E11A3CB4B000761A4F = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 143CE9C81A3CB4B000761A4F;
+					};
+				};
+			};
+			buildConfigurationList = 143CE9C41A3CB4B000761A4F /* Build configuration list for PBXProject "UCZProgressView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 143CE9C01A3CB4B000761A4F;
+			productRefGroup = 143CE9CA1A3CB4B000761A4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				143CE9C81A3CB4B000761A4F /* UCZProgressView */,
+				143CE9E11A3CB4B000761A4F /* UCZProgressViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		143CE9C71A3CB4B000761A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143CE9D81A3CB4B000761A4F /* Main.storyboard in Resources */,
+				143CE9DD1A3CB4B000761A4F /* LaunchScreen.xib in Resources */,
+				143CE9DA1A3CB4B000761A4F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143CE9E01A3CB4B000761A4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		143CE9C51A3CB4B000761A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149C91AD1A3CD74600691A0E /* ThumbnailCell.m in Sources */,
+				143CE9D51A3CB4B000761A4F /* ViewController.m in Sources */,
+				143CE9D21A3CB4B000761A4F /* AppDelegate.m in Sources */,
+				143CE9F51A3CB5DC00761A4F /* UCZProgressView.m in Sources */,
+				143CE9CF1A3CB4B000761A4F /* main.m in Sources */,
+				149C91B01A3CD83000691A0E /* DetailViewController.m in Sources */,
+				149C91B31A3CE5C300691A0E /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		143CE9DE1A3CB4B000761A4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				143CE9E91A3CB4B000761A4F /* UCZProgressViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		143CE9E41A3CB4B000761A4F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 143CE9C81A3CB4B000761A4F /* UCZProgressView */;
+			targetProxy = 143CE9E31A3CB4B000761A4F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		143CE9D61A3CB4B000761A4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143CE9D71A3CB4B000761A4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		143CE9DB1A3CB4B000761A4F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				143CE9DC1A3CB4B000761A4F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		143CE9EA1A3CB4B000761A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		143CE9EB1A3CB4B000761A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		143CE9ED1A3CB4B000761A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UCZProgressView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		143CE9EE1A3CB4B000761A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = UCZProgressView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		143CE9F01A3CB4B000761A4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UCZProgressViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCZProgressView.app/UCZProgressView";
+			};
+			name = Debug;
+		};
+		143CE9F11A3CB4B000761A4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = UCZProgressViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UCZProgressView.app/UCZProgressView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		143CE9C41A3CB4B000761A4F /* Build configuration list for PBXProject "UCZProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143CE9EA1A3CB4B000761A4F /* Debug */,
+				143CE9EB1A3CB4B000761A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143CE9EC1A3CB4B000761A4F /* Build configuration list for PBXNativeTarget "UCZProgressView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143CE9ED1A3CB4B000761A4F /* Debug */,
+				143CE9EE1A3CB4B000761A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		143CE9EF1A3CB4B000761A4F /* Build configuration list for PBXNativeTarget "UCZProgressViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				143CE9F01A3CB4B000761A4F /* Debug */,
+				143CE9F11A3CB4B000761A4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 143CE9C11A3CB4B000761A4F /* Project object */;
+}
