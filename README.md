@@ -3,6 +3,11 @@ UCZProgressView
 
 UCZProgressView is a circular progress indicator for image loading.
 
+<img src="https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/movie1.gif" />&nbsp;
+<img src="https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/movie2.gif" />&nbsp;
+<img src="https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/movie3.gif" />&nbsp;
+<img src="https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/movie4.gif" />&nbsp;
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
