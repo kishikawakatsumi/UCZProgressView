@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
                        - Customizable background view (blur style)
                        DESC
   s.homepage         = "https://github.com/kishikawakatsumi/UCZProgressView"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots      = "https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/movie1.gif", "https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/movie2.gif", "https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/movie3.gif", "https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/movie4.gif"
   s.license          = 'MIT'
   s.author           = { "kishikawa katsumi" => "kishikawakatsumi@mac.com" }
   s.source           = { :git => "https://github.com/kishikawakatsumi/UCZProgressView.git", :tag => "v#{s.version}" }
