@@ -1,4 +1,4 @@
-UCZProgressView
+# UCZProgressView [![CI Status](http://img.shields.io/travis/kishikawakatsumi/UCZProgressView.svg?style=flat)](https://travis-ci.org/kishikawakatsumi/UCZProgressView)
 ===============
 
 UCZProgressView is a circular progress indicator for image loading.
