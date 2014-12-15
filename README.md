@@ -9,6 +9,8 @@ This progress view is inspired by [Michaël Villar's motion effect 08-Photo Load
 - Display a label with the current progress.
 - Customizable progress text label (color, size and font)
 - Customizable background view (blur style)
+- Fully support interface builder (`IB_DESIGNABLE` and `IBInspectable`)
+- Fully support `UI_APPEARANCE_SELECTOR`
 
 <img src="https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/movie1.gif" width="320px" />&nbsp;
 <img src="https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/movie2.gif" width="320px" />&nbsp;
