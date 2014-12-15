@@ -32,10 +32,6 @@
                           @{@"thumbnail_url": @"https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Example/Images/Thumbnails/9O7A2846.png", @"original_url": @"https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Example/Images/9O7A2846.png"}];
 }
 
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.photoObjects.count;
-}
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"Detail"]) {
         ThumbnailCell *cell = sender;
@@ -49,6 +45,12 @@
         NSDictionary *photoObject = self.photoObjects[indexPath.item];
         viewController.fullResolutionImageURL = [NSURL URLWithString:photoObject[@"original_url"]];
     }
+}
+
+#pragma mark -
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return self.photoObjects.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
