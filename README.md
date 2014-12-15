@@ -1,5 +1,8 @@
 # UCZProgressView
 [![CI Status](http://img.shields.io/travis/kishikawakatsumi/UCZProgressView.svg?style=flat)](https://travis-ci.org/kishikawakatsumi/UCZProgressView)
+[![Version](https://img.shields.io/cocoapods/v/UCZProgressView.svg?style=flat)](http://cocoadocs.org/docsets/UCZProgressView)
+[![License](https://img.shields.io/cocoapods/l/UCZProgressView.svg?style=flat)](http://cocoadocs.org/docsets/UCZProgressView)
+[![Platform](https://img.shields.io/cocoapods/p/UCZProgressView.svg?style=flat)](http://cocoadocs.org/docsets/UCZProgressView)
 
 UCZProgressView is a circular progress indicator with cool animations for image loading.
 
