@@ -3,6 +3,7 @@ cache:
   directories:
     - Example/vendor/bundle
 install:
+  - sudo easy_install cpp-coveralls
   - (cd Example && bundle install --path=vendor/bundle --binstubs=vendor/bin)
 script:
   - (cd Example && bundle exec pod install && bundle exec rake build test)
