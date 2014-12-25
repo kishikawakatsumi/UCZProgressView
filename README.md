@@ -1,5 +1,6 @@
 # UCZProgressView
 [![CI Status](http://img.shields.io/travis/kishikawakatsumi/UCZProgressView.svg?style=flat)](https://travis-ci.org/kishikawakatsumi/UCZProgressView)
+[![Coverage Status](https://img.shields.io/coveralls/kishikawakatsumi/UCZProgressView.svg?style=flat)](https://coveralls.io/r/kishikawakatsumi/UCZProgressView?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/UCZProgressView.svg?style=flat)](http://cocoadocs.org/docsets/UCZProgressView)
 [![License](https://img.shields.io/cocoapods/l/UCZProgressView.svg?style=flat)](http://cocoadocs.org/docsets/UCZProgressView)
 [![Platform](https://img.shields.io/cocoapods/p/UCZProgressView.svg?style=flat)](http://cocoadocs.org/docsets/UCZProgressView)
