@@ -24,4 +24,6 @@ XCJobs::Test.new do |t|
     t.add_destination(destination)
   end
   t.formatter = 'xcpretty -c'
+  t.add_build_setting('GCC_INSTRUMENT_PROGRAM_FLOW_ARCS', 'YES')
+  t.add_build_setting('GCC_GENERATE_TEST_COVERAGE_FILES', 'YES')
 end

@@ -6,6 +6,8 @@ install:
   - (cd Example && bundle install --path=vendor/bundle --binstubs=vendor/bin)
 script:
   - (cd Example && bundle exec pod install && bundle exec rake build test)
+after_success:
+  - (cd Example && ./Script/coveralls.sh)
 env:
   global:
     - LANG=en_US.UTF-8
