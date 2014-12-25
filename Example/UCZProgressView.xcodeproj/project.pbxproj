@@ -182,6 +182,7 @@
 				143CE9C51A3CB4B000761A4F /* Sources */,
 				143CE9C61A3CB4B000761A4F /* Frameworks */,
 				143CE9C71A3CB4B000761A4F /* Resources */,
+				1405873D1A4C107C0077B2D2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -270,6 +271,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1405873D1A4C107C0077B2D2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "Script/create-coveralls-script.sh";
+		};
 		9AD30F17127E740B2B283780 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
