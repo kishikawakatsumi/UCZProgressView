@@ -5,7 +5,7 @@ def destinations
 end
 
 XCJobs::Build.new do |t|
-  t.workspace = 'UCZProgressView.xcworkspace'
+  t.workspace = 'UCZProgressView'
   t.scheme = 'UCZProgressView'
   t.configuration = 'Release'
   t.build_dir = 'build'
@@ -16,14 +16,18 @@ XCJobs::Build.new do |t|
 end
 
 XCJobs::Test.new do |t|
-  t.workspace = 'UCZProgressView.xcworkspace'
+  t.workspace = 'UCZProgressView'
   t.scheme = 'UCZProgressView'
   t.configuration = 'Release'
   t.build_dir = 'build'
   destinations.each do |destination|
     t.add_destination(destination)
   end
+  t.coverage = true
   t.formatter = 'xcpretty -c'
-  t.add_build_setting('GCC_INSTRUMENT_PROGRAM_FLOW_ARCS', 'YES')
-  t.add_build_setting('GCC_GENERATE_TEST_COVERAGE_FILES', 'YES')
+end
+
+XCJobs::Coverage::Coveralls.new() do |t|
+  t.add_extension('.m')
+  t.add_exclude('Example')
 end
