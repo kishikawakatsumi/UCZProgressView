@@ -7,7 +7,7 @@
 
 ### Enhancements
 
-* Hiding progress view from super view to allow user interactions
+* Hiding progress view from super view to allow user interactions  
   [Ryan Fitzgerald](https://github.com/ryanfitz)
   [#4](https://github.com/kishikawakatsumi/UCZProgressView/pull/4)
 
