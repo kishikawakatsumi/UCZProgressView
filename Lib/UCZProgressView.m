@@ -210,7 +210,7 @@
     }
     _indeterminate = indeterminate;
     
-    self.backgroundView.hidden = NO;
+    self.hidden = NO;
     
     if (indeterminate) {
         _progressLayer.strokeStart = 0.1;
@@ -258,7 +258,7 @@
     }
     
     if (progress > 0.0) {
-        self.backgroundView.hidden = NO;
+        self.hidden = NO;
     }
     
     self.progressLayer.actions = animated ? nil : @{@"strokeEnd": [NSNull null]};
@@ -324,7 +324,7 @@
 
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
     self.backgroundView.layer.mask = nil;
-    self.backgroundView.hidden = YES;
+    self.hidden = YES;
 }
 
 #pragma mark -

@@ -52,11 +52,15 @@
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"textFontSize"]) {
         self.progressView.textSize = [[NSUserDefaults standardUserDefaults] doubleForKey:@"textFontSize"];
     }
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTapImage:)];
+    [self.imageView setUserInteractionEnabled:YES];
+    [self.imageView addGestureRecognizer:singleTap];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:self.fullResolutionImageURL] delegate:self];
+    [self loadImage];
 }
 
 #pragma mark -
@@ -88,6 +92,19 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     self.progressView.progress = 1.0;
+}
+
+#pragma mark - actions
+
+- (void)didTapImage:(id)sender {
+    NSLog(@"reloading progress view");
+    [self loadImage];
+}
+
+#pragma mark - private methods
+
+- (void)loadImage {
+    [NSURLConnection connectionWithRequest:[NSURLRequest requestWithURL:self.fullResolutionImageURL] delegate:self];
 }
 
 @end
