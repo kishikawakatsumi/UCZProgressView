@@ -29,5 +29,6 @@ IB_DESIGNABLE
 @property (nonatomic) IBInspectable BOOL usesVibrancyEffect; // UI_APPEARANCE_SELECTOR;
 
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated;
+- (void)progressAnimiationDidStop:(void(^)(void))block;
 
 @end

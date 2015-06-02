@@ -12,6 +12,7 @@
 
 @property (nonatomic) CALayer *backgroundLayer;
 @property (nonatomic) CAShapeLayer *progressLayer;
+@property (nonatomic,copy)void(^progressDidStopBlock)(void);
 
 @end
 
@@ -322,7 +323,12 @@
     [maskLayer addAnimation:animation forKey:@"path"];
 }
 
+- (void)progressAnimiationDidStop:(void(^)(void))block{
+    self.progressDidStopBlock = block;
+}
+
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+    self.progressDidStopBlock();
     self.backgroundView.layer.mask = nil;
     self.hidden = YES;
 }
