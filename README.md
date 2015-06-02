@@ -100,6 +100,17 @@ self.progressView.blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleEx
 
 <img src="https://raw.githubusercontent.com/kishikawakatsumi/UCZProgressView/master/Screenshots/blur.png" width="100px" />
 
+
+### Animation did stop block
+
+```objc
+ [progressView progressAnimiationDidStop:^{ 
+       [self presentViewController:_photoGallery animated:YES completion:nil];
+ }];
+```
+
+<img src="https://github.com/KittenYang/UCZProgressView/blob/master/Screenshots/stopBlock.gif?raw=true" width="300px" />
+
 ## Requirements
 
 iOS 5 or later
