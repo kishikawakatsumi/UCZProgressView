@@ -109,7 +109,7 @@ self.progressView.blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleEx
  }];
 ```
 
-<img src="https://github.com/KittenYang/UCZProgressView/blob/master/Screenshots/stopBlock.gif?raw=true" width="300px" />
+<img src="https://github.com/KittenYang/KYElegantPhotoGallery/raw/master/demo.gif" width="300px" />
 
 ## Requirements
 
