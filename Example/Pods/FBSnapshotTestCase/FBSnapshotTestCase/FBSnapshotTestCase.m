@@ -23,7 +23,7 @@
 - (void)setUp
 {
   [super setUp];
-  self.snapshotController = [[FBSnapshotTestController alloc] initWithTestClass:[self class]];
+  self.snapshotController = [[FBSnapshotTestController alloc] initWithTestName:NSStringFromClass([self class])];
 }
 
 - (void)tearDown
@@ -40,16 +40,6 @@
 - (void)setRecordMode:(BOOL)recordMode
 {
   self.snapshotController.recordMode = recordMode;
-}
-
-- (BOOL)renderAsLayer
-{
-    return self.snapshotController.renderAsLayer;
-}
-
-- (void)setRenderAsLayer:(BOOL)renderAsLayer
-{
-    self.snapshotController.renderAsLayer = renderAsLayer;
 }
 
 - (BOOL)compareSnapshotOfLayer:(CALayer *)layer
