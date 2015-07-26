@@ -3,9 +3,9 @@ cache:
   directories:
     - Example/vendor/bundle
 install:
-  - (cd Example && bundle install --path=vendor/bundle --binstubs=vendor/bin)
+  - (cd Example && bundle install --path=vendor/bundle --binstubs=vendor/bin && bundle exec pod install)
 script:
-  - (cd Example && bundle exec pod install && bundle exec rake build test coverage:coveralls)
+  - (cd Example && bundle exec rake build test)
 after_success:
   - (cd Example && bundle exec rake coverage:coveralls)
 branches:
