@@ -28,6 +28,8 @@ IB_DESIGNABLE
 @property (nonatomic) UIBlurEffect *blurEffect NS_AVAILABLE_IOS(8_0); // UI_APPEARANCE_SELECTOR;
 @property (nonatomic) IBInspectable BOOL usesVibrancyEffect; // UI_APPEARANCE_SELECTOR;
 
+@property (nonatomic, copy) void(^animationDidStopBlock)();
+
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated;
 
 @end
