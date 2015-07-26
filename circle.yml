@@ -1,0 +1,15 @@
+machine:
+  xcode:
+    version: '6.3.1'
+
+dependencies:
+  override:
+    - (cd Example && bundle install --path=vendor/bundle --binstubs=vendor/bin)
+    - (cd Example && bundle exec pod install)
+
+  cache_directories:
+    - 'Example/vendor/bundle'
+
+test:
+  override:
+    - (cd Example && bundle exec pod install && bundle exec rake build test)

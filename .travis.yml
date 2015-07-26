@@ -6,6 +6,8 @@ install:
   - (cd Example && bundle install --path=vendor/bundle --binstubs=vendor/bin)
 script:
   - (cd Example && bundle exec pod install && bundle exec rake build test coverage:coveralls)
+after_success:
+  - (cd Example && bundle exec rake coverage:coveralls)
 branches:
   only:
     - master
