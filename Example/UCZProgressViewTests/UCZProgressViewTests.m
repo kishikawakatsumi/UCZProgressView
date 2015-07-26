@@ -209,4 +209,17 @@
     FBSnapshotVerifyView(progressView, nil);
 }
 
+- (void)testAnimationDidStopBlock {
+    XCTestExpectation *expectation = [self expectationWithDescription:@"AnimationDidStart"];
+
+    UCZProgressView *progressView = [[UCZProgressView alloc] initWithFrame:CGRectMake(0.0, 0.0, 320.0, 568.0)];
+    progressView.animationDidStopBlock = ^{
+        [expectation fulfill];
+    };
+
+    progressView.progress = 1.0;
+
+    [self waitForExpectationsWithTimeout:2.0 handler:nil];
+}
+
 @end
