@@ -8,7 +8,7 @@
 
 #import "UCZProgressView.h"
 
-@interface UCZProgressView ()
+@interface UCZProgressView () <CAAnimationDelegate>
 
 @property (nonatomic) CALayer *backgroundLayer;
 @property (nonatomic) CAShapeLayer *progressLayer;
